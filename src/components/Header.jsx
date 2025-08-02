@@ -7,7 +7,7 @@ export default function Header() {
   const [isActive, setIsActive] = useState("");
   const [isClose, setIsClose] = useState(true);
   return (
-    <header className="flex w-full justify-between bg-[#050414]/70 py-4 backdrop-blur-md">
+    <header className="flex max-w-[900px] px-6 mx-auto justify-between bg-[#050414]/70 py-4 backdrop-blur-md">
       <div className="text-lg font-semibold md:text-xl">
         <span className="text-[#8245ec]">&lt;</span>
         <span className="text-white">Aditi</span>
@@ -33,7 +33,7 @@ export default function Header() {
       >
         {/* list items  */}
         <ul className="relative items-center justify-center space-y-2 text-base font-semibold sm:mx-auto sm:flex sm:gap-5 sm:space-y-0 md:gap-10 md:text-[17px] lg:text-lg">
-          <li className="cursor-pointer text-white hover:text-[#8245ec] sm:hidden">
+          <li className="cursor-pointer text-[#D1D5DB] hover:text-[#8245ec] sm:hidden">
             <IoClose
               size={24}
               className="absolute -top-5 -right-9"

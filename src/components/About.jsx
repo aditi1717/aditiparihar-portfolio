@@ -8,7 +8,7 @@ import Tilt from "react-parallax-tilt";
 
 export default function About() {
   return (
-    <section className="relative mt-40 flex w-full flex-col items-center gap-8 md:flex-row md:gap-4">
+    <section className="relative mt-40 flex max-w-[900px] px-6 mx-auto  flex-col items-center gap-8 md:flex-row md:gap-4">
        {/* for bulb like effect */}
 			<div
 				className=" absolute top-4 bg-transparent left-22 lg:left-14 rounded-full"
@@ -53,7 +53,7 @@ export default function About() {
             <input type="text" className="ml-10 md:ml-0" />
           </ReactTyped>
         </h2>
-        <p className="xs:text-base text-[14px] leading-7 text-[#D1D5DB] md:text-[17px] lg:text-lg">
+        <p className="xs:text-base text-sm leading-7 text-gray-400  md:text-[17px] lg:text-lg">
           I’m a full-stack web developer with hands-on experience in building
           projects using the MERN stack. Through personal and academic projects,
           I’ve developed skills in both front-end and back-end technologies to
