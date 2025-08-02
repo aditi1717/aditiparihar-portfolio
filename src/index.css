@@ -2,5 +2,8 @@
 @import "tailwindcss";
 
 * {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+@theme {
+  --breakpoint-xs: 392px;
 }
