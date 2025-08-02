@@ -8,7 +8,16 @@ import Tilt from "react-parallax-tilt";
 
 export default function About() {
   return (
-    <section className="mt-40 flex w-full flex-col items-center gap-8 md:flex-row md:gap-4">
+    <section className="relative mt-40 flex w-full flex-col items-center gap-8 md:flex-row md:gap-4">
+       {/* for bulb like effect */}
+			<div
+				className=" absolute top-4 bg-transparent left-22 lg:left-14 rounded-full"
+				style={{
+					boxShadow: " 0px 0px 160px 44px rgb(130, 69, 236)",
+				}}
+			>
+				{" "}
+			</div>
       <Tilt
         glareEnable={false}
         tiltMaxAngleX={15}
@@ -51,7 +60,7 @@ export default function About() {
           create smooth and responsive user experiences.
         </p>
         <div
-          className="xs:text-[14px] inline-block rounded-full bg-[#8245ec] px-4 py-2 text-center text-xs font-semibold md:text-base"
+          className="md:mt-6 xs:text-[14px] inline-block rounded-full bg-[#8245ec] px-4 py-2 text-center text-xs font-semibold md:text-base"
           style={{ boxShadow: " 0px 0px 40px 0px rgb(130, 69, 236)" }}
         >
           <a className="text-white" href="#">
