@@ -1,9 +1,9 @@
 import { skillsInfo } from "../constants/Constants";
-// import Tilt from "react-parallax-tilt";
+import Tilt from "react-parallax-tilt";
 
 export default function Skills() {
   return (
-    <section className='bg-custom-multi-gradient py-40 clip-path-custom'>
+    <section className='bg-custom-multi-gradient py-25 sm:py-40 clip-path-custom'>
         <div className='max-w-[900px] px-6 mx-auto text-center space-y-12'>
            
            {/* section title */}
@@ -18,7 +18,15 @@ export default function Skills() {
            {skillsInfo.map((category)=>{
            return ( <div key={category.title} className="space-y-4 px-1 xs:px-2 py-4 min-h-[194px] max-w-[450px] min-w-[200px] xs:min-w-[316px] lg:min-w-[406px] flex-1 bg-gray-900 rounded-2xl border border-white  shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
                  <h2 className="text-gray-400 text-2xl xs:text-3xl font-bold md:text-4xl'">{category.title}</h2>
-                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-1">
+                 <Tilt
+                                  key={category.title}
+                                  glareEnable={false}
+                                  tiltMaxAngleX={15}
+                                  tiltMaxAngleY={15}
+                                  scale={1.00}
+                                  transitionSpeed={1000}
+                                >
+                                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-1">
                    {
                      category.skills.map((skill)=>{
                         return (<div key={skill.name} className="p-2 flex justify-center gap-1/2 xs:gap-1 items-center border-2 border-gray-700 rounded-4xl bg-transparent ">
@@ -27,7 +35,9 @@ export default function Skills() {
                         </div>)
                      })
                    }
-                 </div>
+                 </div> 
+                                </Tilt>
+                 
             </div>)
            })}
          </div>
