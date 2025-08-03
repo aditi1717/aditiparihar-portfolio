@@ -7,7 +7,8 @@ export default function Header() {
   const [isActive, setIsActive] = useState("");
   const [isClose, setIsClose] = useState(true);
   return (
-    <header className="flex max-w-[900px] px-6 mx-auto justify-between bg-[#050414]/70 py-4 backdrop-blur-md">
+   <header className="w-full bg-[#050414]/70 z-50 sticky top-0 backdrop-blur-md ">
+     <div className="relative  flex max-w-[900px] px-6 mx-auto justify-between py-4 ">
       <div className="text-lg font-semibold md:text-xl">
         <span className="text-[#8245ec]">&lt;</span>
         <span className="text-white">Aditi</span>
@@ -27,7 +28,7 @@ export default function Header() {
         />
       </div>
       <div
-        className={`bg-[#050414]/70 backdrop-blur-md sm:bg-transparent ${
+        className={`bg-[#050414]/70 sm:bg-transparent  ${
           isClose ? "hidden" : "flex"
         } absolute top-1 right-0 flex-col space-y-2 px-10 py-8 sm:static sm:flex sm:flex-1 sm:flex-row sm:space-y-0 sm:p-0`}
       >
@@ -36,7 +37,7 @@ export default function Header() {
           <li className="cursor-pointer text-[#D1D5DB] hover:text-[#8245ec] sm:hidden">
             <IoClose
               size={24}
-              className="absolute -top-5 -right-9"
+              className="absolute -top-5 -right-5"
               onClick={() => {
                 setIsClose(true);
               }}
@@ -74,6 +75,7 @@ export default function Header() {
           })}
         </div>
       </div>
-    </header>
+    </div>
+   </header>
   );
 }
