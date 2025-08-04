@@ -7,7 +7,7 @@ export default function Header() {
   const [isActive, setIsActive] = useState("");
   const [isClose, setIsClose] = useState(true);
   return (
-   <header className="w-full bg-[#050414]/70 z-20 sticky top-0 backdrop-blur-md ">
+   <header className="w-full bg-[#050414]/70 z-30 sticky top-0 backdrop-blur-md ">
      <div className="relative  flex max-w-[900px] px-6 mx-auto justify-between py-4 ">
       <div className="text-lg font-semibold md:text-xl">
         <span className="text-[#8245ec]">&lt;</span>

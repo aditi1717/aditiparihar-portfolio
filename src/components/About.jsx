@@ -74,7 +74,7 @@ export default function About() {
         tiltMaxAngleY={15}
         scale={1.05}
         transitionSpeed={1000}
-        className="relative z-20 hidden flex-1 overflow-hidden rounded-[30%] border-4 border-[#8245ec] md:block"
+        className="relative z-10 hidden flex-1 overflow-hidden rounded-[30%] border-4 border-[#8245ec] md:block"
       >
         <img className="" src={aditipic} alt="no photo" />
       </Tilt>
