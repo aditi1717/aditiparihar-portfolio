@@ -47,7 +47,7 @@ export default function Contact() {
     }
       
   return (
-   <section id='contact' className='max-w-[900px] px-6 mx-auto py-25 md:py-40 space-y-10 md:space-y-16 flex flex-col items-center text-center'>
+   <section id='contact' className='max-w-[900px] px-6 mx-auto pt-25 md:pt-40 space-y-10 md:space-y-16 flex flex-col items-center text-center'>
         {/* section title */}
          <div className='text-center space-y-3'>
               <h1 className='text-2xl xs:text-3xl font-bold text-white md:text-4xl'>{'Contact'.toUpperCase()}</h1>
