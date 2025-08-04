@@ -3,18 +3,18 @@ import Tilt from "react-parallax-tilt";
 
 export default function Skills() {
   return (
-    <section className='bg-custom-multi-gradient py-25 sm:py-40 clip-path-custom'>
+    <section id="skills" className='bg-custom-multi-gradient py-25 md:py-40 clip-path-custom'>
         <div className='max-w-[900px] px-6 mx-auto text-center space-y-12'>
            
            {/* section title */}
          <div className='text-center space-y-3'>
               <h1 className='text-2xl xs:text-3xl font-bold text-white md:text-4xl'>{'Skills'.toUpperCase()}</h1>
-           <div className="h-1 w-28 bg-[#8245ec] mx-auto"></div>
+           <div className="h-1 w-28 bg-purple-500 mx-auto"></div>
            <p className='xs:text-base text-[14px]  text-gray-400  md:text-[17px] lg:text-lg font-bold'>A collection of my technical skills and expertise honed through various projects and experiences</p>
          </div>
 
          {/* skills categories*/}
-         <div className="flex  flex-wrap justify-center gap-3 ">
+         <div className="flex  flex-wrap justify-center gap-6 sm:gap-3 ">
            {skillsInfo.map((category)=>{
            return ( <div key={category.title} className="space-y-4 px-1 xs:px-2 py-4 min-h-[202px] max-w-[450px] min-w-[200px] xs:min-w-[316px] lg:min-w-[406px] flex-1 bg-gray-900 rounded-2xl border border-white  shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]">
                  <h2 className="text-gray-400 text-2xl xs:text-3xl font-bold md:text-4xl'">{category.title}</h2>

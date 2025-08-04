@@ -8,7 +8,7 @@ import Tilt from "react-parallax-tilt";
 
 export default function About() {
   return (
-    <section className="relative mt-25 sm:mt-40 flex max-w-[900px] px-6 mx-auto  flex-col items-center gap-8 md:flex-row md:gap-4">
+    <section id="about" className="relative mt-25 sm:mt-40 flex max-w-[900px] px-6 mx-auto  flex-col items-center gap-8 md:flex-row md:gap-4">
        {/* for bulb like effect */}
 			<div
 				className=" absolute top-4 bg-transparent left-22 lg:left-14 rounded-full"
@@ -24,7 +24,7 @@ export default function About() {
         tiltMaxAngleY={15}
         scale={1.05}
         transitionSpeed={1000}
-        className="relative z-20 max-w-[450px] overflow-hidden rounded-full border-4 border-[#8245ec] md:hidden md:w-auto md:flex-1"
+        className="relative z-10 max-w-[450px] overflow-hidden rounded-full border-4 border-[#8245ec] md:hidden md:w-auto md:flex-1"
       >
         <img
           className="aspect-square w-full object-cover"
