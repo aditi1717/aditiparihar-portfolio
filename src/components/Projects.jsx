@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { projects } from "../../../Portfolio/src/Constants"
+import { projects } from "../constants/Constants"
 
 export default function Projects() {
     const [selectedProject,setSelectedProject]=useState(null);
