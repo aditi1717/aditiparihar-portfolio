@@ -9,7 +9,7 @@ export default function Skills() {
            {/* section title */}
          <div className='text-center space-y-3'>
               <h1 className='text-2xl xs:text-3xl font-bold text-white md:text-4xl'>{'Skills'.toUpperCase()}</h1>
-           <div className="h-1 w-28 bg-purple-500 mx-auto"></div>
+           <div className="h-1 max-w-28 bg-purple-500 mx-auto"></div>
            <p className='xs:text-base text-[14px]  text-gray-400  md:text-[17px] lg:text-lg font-bold'>A collection of my technical skills and expertise honed through various projects and experiences</p>
          </div>
 
