@@ -63,7 +63,7 @@ export default function About() {
           className="mt-4 md:mt-6 xs:text-[14px] inline-block rounded-full bg-[#8245ec] px-4 py-2 text-center text-xs font-semibold md:text-base"
           style={{ boxShadow: " 0px 0px 40px 0px rgb(130, 69, 236)" }}
         >
-          <a className="text-white" href="#">
+          <a className="text-white" href="https://drive.google.com/file/d/1JAhq49nPkkazGivQCNpVzF6nQaCRyUdz/view?usp=sharing" target="_blank"   rel="noopener noreferrer">
             DOWNLOAD CV
           </a>
         </div>
