@@ -1,4 +1,4 @@
-import aditipic from "../assets/aditi.jpeg";
+import aditipic from "../assets/Aditi.jpeg";
 
 // for typing effect
 import { ReactTyped } from "react-typed";
