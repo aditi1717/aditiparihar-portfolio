@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Education() {
   return (
-    <section id='education' className='bg-custom-multi-gradient py-25 md:py-40 clip-path-custom'>
-        <div className='max-w-[900px] px-6 mx-auto space-y-12 text-center'>
+    <section id='education' className='bg-custom-multi-gradient py-25 md:py-40 clip-path-custom w-full'>
+        <div className='max-w-[900px] px-6 mx-auto space-y-12 text-center w-full'>
               {/* section title */}
          <div className='text-center space-y-3'>
               <h1 className='text-2xl xs:text-3xl font-bold text-white md:text-4xl'>{'Education'.toUpperCase()}</h1>

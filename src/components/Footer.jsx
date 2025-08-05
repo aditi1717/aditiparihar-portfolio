@@ -3,7 +3,7 @@ import { navItems } from "../constants/Constants";
 import { mediaItems } from "../constants/Constants";
 export default function Footer() {
   return (
-    <footer className=' max-w-[430px] p-6 flex flex-col items-center mx-auto space-y-4 pt-30 text-center'>
+    <footer className=' max-w-[430px] w-full p-6 flex flex-col items-center mx-auto space-y-4 pt-30 text-center'>
        <h3 className="text-purple-500 font-semibold text-xl sm:text-2xl">Aditi Parihar</h3>
        <ul className="flex justify-between w-full  gap-1 flex-wrap">
            {navItems.map((navItem) => {

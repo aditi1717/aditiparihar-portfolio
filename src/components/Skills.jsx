@@ -3,8 +3,8 @@ import Tilt from "react-parallax-tilt";
 
 export default function Skills() {
   return (
-    <section id="skills" className='bg-custom-multi-gradient py-25 md:py-40 clip-path-custom'>
-        <div className='max-w-[900px] px-6 mx-auto text-center space-y-12'>
+    <section id="skills" className='w-full bg-custom-multi-gradient py-25 md:py-40 clip-path-custom'>
+        <div className='w-full max-w-[900px] px-6 mx-auto text-center space-y-12'>
            
            {/* section title */}
          <div className='text-center space-y-3'>

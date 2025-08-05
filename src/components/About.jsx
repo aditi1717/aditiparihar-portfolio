@@ -24,7 +24,7 @@ export default function About() {
         tiltMaxAngleY={15}
         scale={1.05}
         transitionSpeed={1000}
-        className="relative z-10 max-w-[450px] overflow-hidden rounded-full border-4 border-[#8245ec] md:hidden md:w-auto md:flex-1"
+        className="relative z-10 max-w-[450px] overflow-hidden rounded-full border-4 border-[#8245ec] md:hidden  "
       >
         <img
           className="aspect-square w-full object-cover"

@@ -10,7 +10,7 @@ export default function Projects() {
            setSelectedProject(null);
     }
   return (
-    <section id='projects' className="mt-25 md:mt-40 max-w-[900px] px-6 mx-auto space-y-12">
+    <section id='projects' className="mt-25 w-full md:mt-40 max-w-[900px] px-6 mx-auto space-y-12">
           {/* section title */}
          <div className='text-center space-y-3'>
               <h1 className='text-2xl xs:text-3xl font-bold text-white md:text-4xl'>{'Projects'.toUpperCase()}</h1>
