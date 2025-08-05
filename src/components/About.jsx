@@ -40,17 +40,16 @@ export default function About() {
           </span>
         </h1>
 
-        <h2 className="xs:text-xl text-lg font-bold text-white md:text-2xl">
+        <h2 className="xs:text-xl text-lg font-bold text-white md:text-2xl text-center md:text-left">
           I'm into <br />
           <ReactTyped
             className="text-[#8245ec]"
             strings={["Frontend Development", "Backened Development"]}
             typeSpeed={40}
             backSpeed={50}
-            attr="placeholder"
+           
             loop
           >
-            <input type="text" className="pl-10 md:pl-0" />
           </ReactTyped>
         </h2>
         <p className="text-sm xs:text-base leading-7 text-gray-400  md:text-[17px] lg:text-lg w-full">
