@@ -50,7 +50,7 @@ export default function About() {
             attr="placeholder"
             loop
           >
-            <input type="text" className="ml-10 md:ml-0" />
+            <input type="text" className="pl-10 md:pl-0" />
           </ReactTyped>
         </h2>
         <p className="text-sm xs:text-base leading-7 text-gray-400  md:text-[17px] lg:text-lg w-full">
