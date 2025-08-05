@@ -8,7 +8,7 @@ import Tilt from "react-parallax-tilt";
 
 export default function About() {
   return (
-    <section id="about" className="relative mt-25 sm:mt-40 flex max-w-[900px] px-6 mx-auto  flex-col items-center gap-8 md:flex-row md:gap-4">
+    <section id="about" className="w-full relative mt-25 sm:mt-40 flex max-w-[900px] px-6 mx-auto  flex-col items-center gap-8 md:flex-row md:gap-4">
        {/* for bulb like effect */}
 			<div
 				className=" absolute top-4 bg-transparent left-22 lg:left-14 rounded-full"
@@ -32,7 +32,7 @@ export default function About() {
           alt="no photo"
         />
       </Tilt>
-      <div className="xs:space-y-6 flex-1 space-y-4 text-center md:text-left">
+      <div className="xs:space-y-6 flex-1 space-y-4 text-center md:text-left w-full break-words">
         <h1 className="xs:text-3xl xs:leading-14 text-2xl leading-9 font-bold text-white md:text-4xl">
           Hi,I am <br />
           <span className="xs:text-4xl text-2xl font-bold md:text-[42px] lg:text-5xl">
@@ -53,7 +53,7 @@ export default function About() {
             <input type="text" className="ml-10 md:ml-0" />
           </ReactTyped>
         </h2>
-        <p className="xs:text-base text-sm leading-7 text-gray-400  md:text-[17px] lg:text-lg">
+        <p className="text-sm xs:text-base leading-7 text-gray-400  md:text-[17px] lg:text-lg w-full">
           I’m a full-stack web developer with hands-on experience in building
           projects using the MERN stack. Through personal and academic projects,
           I’ve developed skills in both front-end and back-end technologies to
