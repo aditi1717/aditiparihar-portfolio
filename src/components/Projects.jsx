@@ -48,19 +48,19 @@ export default function Projects() {
          {/* modal conatiner */}
 
          {selectedProject && (
-            <div className="bg-black/90  fixed inset-0  z-50 px-6  ">
-               <div className="max-w-[900px] py-2 px-4 mx-auto h-dvh bg-gray-900 text-center space-y-2">
+            <div className="bg-black/90  fixed inset-0  z-50 p-4 text-center ">
+               <div className="w-full flex flex-col max-w-[900px] h-full p-4 mx-auto bg-gray-900 ">
                     <div className="flex justify-end">
                         <button className=" text-white text-3xl font-bold hover:text-purple-500 cursor-pointer" onClick={handleCloseModel}> &times;</button>
                     </div>
-                    <div className="space-y-3 sm:space-y-6 ">
-                         <div className=" rounded-2xl overflow-hidden max-w-[630px] mx-auto">
-                            <img src={selectedProject.image} alt={`${selectedProject.title} image`} className=" w-full object-cover "/>
+                    <div className="flex-1 gap-4  flex flex-col overflow-y-auto ">
+                         <div className="flex-1">
+                            <img src={selectedProject.image} alt={`${selectedProject.title} image`} className="w-full h-full max-h-[300px] object-cover rounded-2xl mx-auto"/>
                         </div>
-                         <div className=" space-y-3  sm:space-y-4">
+                         <div className="flex-1 flex flex-col justify-between gap-4">
                              <h3 className="text-xl xs:text-2xl md:text-3xl font-bold text-white ">{selectedProject.title}</h3>
                         <p className="text-sm lg:text-base xs:leading-7 text-gray-400 ">{selectedProject.description}</p>
-                        <div className="space-x-2 space-y-2">
+                        <div className="space-x-2 space-y-4">
                           {
                             selectedProject.tags.map((tag,index)=>{
                                  return(
@@ -69,7 +69,7 @@ export default function Projects() {
                             })
                           }
                         </div>
-                        <div className="flex gap-8">
+                        <div className="flex gap-4 sm:gap-8">
                             <a href={selectedProject.github}
 										target="_blank"
 										rel="noopener noreferrer" className="bg-gray-800 hover:bg-purple-800 text-gray-400 rounded-2xl py-1 px-3 text-sm xs:text-base sm:text-xl lg:text-2xl font-semibold flex-1"
